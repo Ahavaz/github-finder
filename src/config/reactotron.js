@@ -1,0 +1,18 @@
+import Reactotron from 'reactotron-react-js'
+import { reactotronRedux } from 'reactotron-redux'
+import sagaPlugin from 'reactotron-redux-saga'
+
+const { NODE_ENV } = process.env
+
+console.log(NODE_ENV)
+
+if (NODE_ENV === 'development') {
+  const tron = Reactotron.configure()
+    .use(reactotronRedux())
+    .use(sagaPlugin())
+    .connect()
+
+  tron.clear()
+
+  console.tron = tron
+}
