@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
     background-image: linear-gradient(45deg, ${theme.purpureus}, ${theme.raisinBlack});
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     font-family: 'Roboto', sans-serif;
   }
 `
