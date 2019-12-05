@@ -36,17 +36,6 @@ export default function Repos() {
   }, [dispatch, username])
 
   const scroll = () => {
-    // console.log(
-    //   'top',
-    //   document.body.getBoundingClientRect().height - document.body.getBoundingClientRect().top
-    // )
-    // console.log('scrollHeight', document.body.scrollHeight)
-    // console.log(
-    //   'top - scrollHeight',
-    //   document.body.getBoundingClientRect().height - document.body.getBoundingClientRect().top >
-    //     document.body.scrollHeight - 100
-    // )
-
     if (nextPage && !paginating) {
       const paginate =
         document.body.getBoundingClientRect().height - document.body.getBoundingClientRect().top >
@@ -57,7 +46,6 @@ export default function Repos() {
   }
 
   window.onscroll = scroll
-  // document.ontouchmove = scroll
 
   const handleInput = e => {
     setRepoInput(e.target.value || '')

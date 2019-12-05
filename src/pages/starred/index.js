@@ -38,15 +38,14 @@ export default function Starred() {
   const scroll = () => {
     if (nextPage && !paginating) {
       const paginate =
-        document.body.getBoundingClientRect().height - document.body.getBoundingClientRect().top ===
-        document.body.scrollHeight
+        document.body.getBoundingClientRect().height - document.body.getBoundingClientRect().top >
+        document.body.scrollHeight - 100
 
       paginate && dispatch(UsersActions.getStarredRequest(username, nextPage))
     }
   }
 
   window.onscroll = scroll
-  document.body.ontouchmove = scroll
 
   const handleInput = e => {
     setStarredInput(e.target.value || '')
