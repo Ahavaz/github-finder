@@ -8,5 +8,6 @@ export const Container = styled.div`
 
   p {
     font-size: 2em;
+    text-align: center;
   }
 `
