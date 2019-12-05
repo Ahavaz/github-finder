@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased !important;
     color: ${theme.babyPowder};
     background-image: linear-gradient(45deg, ${theme.purpureus}, ${theme.raisinBlack});
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-size: calc(2 * 100vw) calc(2 * 100vh);
     font-family: 'Roboto', sans-serif;
