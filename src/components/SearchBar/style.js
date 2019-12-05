@@ -21,8 +21,10 @@ export const Container = styled.div`
     width: 300px;
     padding: 0 10px 0 25px;
     color: ${theme.raisinBlack};
+    background-color: ${theme.babyPowder};
     font-weight: 600;
-    border: 1px solid ${theme.gray};
+    border: none;
     border-radius: 25px;
+    box-shadow: 0px 1px 1px 1px ${theme.shadowDefault};
   }
 `

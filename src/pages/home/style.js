@@ -9,7 +9,7 @@ export const UserCard = styled.div`
   justify-content: space-between;
   min-height: 320px;
   width: 250px;
-  background-color: ${theme.white};
+  background-color: ${theme.babyPowder};
   box-shadow: 0px 1px 1px 1px ${theme.shadowDefault};
   border-radius: 8px;
   transition: all 200ms ease;
