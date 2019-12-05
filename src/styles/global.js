@@ -24,9 +24,10 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased !important;
     color: ${theme.babyPowder};
     background-image: linear-gradient(45deg, ${theme.purpureus}, ${theme.raisinBlack});
-    background-repeat: repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: calc(2 * 100vw) calc(2 * 100vh);
+    background-size: 200vw 200vh;
     font-family: 'Roboto', sans-serif;
   }
 `
