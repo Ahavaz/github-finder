@@ -46,6 +46,7 @@ export default function Starred() {
   }
 
   window.onscroll = scroll
+  document.body.ontouchmove = scroll
 
   const handleInput = e => {
     setStarredInput(e.target.value || '')

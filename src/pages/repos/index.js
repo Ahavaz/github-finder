@@ -46,6 +46,7 @@ export default function Repos() {
   }
 
   window.onscroll = scroll
+  document.body.ontouchmove = scroll
 
   const handleInput = e => {
     setRepoInput(e.target.value || '')
